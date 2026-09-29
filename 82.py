@@ -1,11 +1,14 @@
 # REMOVE DUPLICATE ELEMENTS FROM A SORTED LIST II
 """Link : https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/"""
 
+from typing import Optional
+
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         dummy = prev = ListNode(0, head)
